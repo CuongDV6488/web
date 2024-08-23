@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tham quan ATBank</title>
+        <link rel="stylesheet" href="Font-Awesome-Pro/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,
+            wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    </head>
+</head>
+<body>
+
+   <!-- header -->
+   <header class="header">
+    <div class="header-infor reponsive-hiden">
+        <p class="header-infor-email">Email: isam@atbank.com</p>
+        <p class="header-infor-hotline" style="text-align: start;" href="">Hotline: 0999888777</p>
+        <div></div>
+        <div style="text-align: end;">
+            <i class="fa-regular fa-earth-americas"></i>
+            <select id="lang" name="lang">
+                <option value="VN">VN</option>
+                <option value="ENG">ENG</option>
+            </select>
+        </div>
+        <div style="text-align: center;">
+            <i style=" font-style: normal;">|</i>
+        </div>
+        <div class="header-infor-logincontainer">
+            <i class="fa-sharp fa-light fa-right-to-bracket"></i>
+            <a class="header-infor-login" href="dangnhap.html">Đăng ký/ Đăng nhập</a>
+        </div>
+    </div>
+    <div class="header-narbar">
+
+        <div class="header-narbar-icon">&#9776;</div>
+        <div></div>
+        <a style="width: fit-content;height: fit-content;" href="home.html">
+            <img style="height: auto" src="image/Logo ATBank 1.png" alt=""></a>
+        <a class="reponsive-hiden" href="home.html"><img style="height: 30PX" src="image/home.png"></a>
+        <div class="dropdown reponsive-hiden">
+            <a href="gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="">GIỚI THIỆU CHUNG</a>
+                <a href="">SỨ MỆNH</a>
+                <a href="">TẦM NHÌN</a>
+                <a href="">GIÁ TRỊ CỐT LÕI</a>
+                <a href="">BAN LÃNH ĐẠO</a>
+            </div>
+        </div>
+        <div class="dropdown reponsive-hiden">
+            <a href="linhvucdautu.html">LĨNH VỰC ĐẦU TƯ</a>
+            <div class="dropdown-content">
+                <a href="">SIÊU THỊ</a>
+                <a href="">CÔNG TY CÔNG NGHỆ</a>
+                <a href="">ỦY THÁC ĐẦU TƯ</a>
+                <a href="">ĐỐI TÁC CỦA BẢO HIỂM NHÂN THỌ</a>
+            </div>
+        </div>
+        <div class="dropdown reponsive-hiden">
+            <a href="tintuc.html">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="">TIN NỘI BỘ</a>
+                <a href="">TIN TỔNG HỢP</a>
+            </div>
+        </div>
+        <a class="reponsive-hiden" href="doitac.html">ĐỐI TÁC</a>
+        <div class="dropdown reponsive-hiden">
+            <a href="tuyendung.html">TUYỂN DỤNG</a>
+            <div class="dropdown-content">
+                <a href="">KÊNH NGOẠI KHỐI</a>
+                <a href="">KÊNH NỘI BỘ</a>
+            </div>
+        </div>
+        <a class="reponsive-hiden" href="lienhe.html">LIÊN HỆ</a>
+        <a class="reponsive-hiden" id="search-button" href=""><img style="height: 30PX;text-align: center;"
+                src="image/search (1).png" alt=""></a>
+        <a class="reponsive-hiden" href="thamquan.html">
+            <button>
+                THAM QUAN ATBANK
+            </button>
+        </a>
+        <div class="header-narbar-lang" style="text-align: end;">
+            <i class="fa-regular fa-earth-americas"></i>
+            <select id="lang" name="lang">
+                <option value="VN">VN</option>
+                <option value="ENG">ENG</option>
+            </select>
+        </div>
+        <div></div>
+    </div>
+</header>
+<!-- header -->
+
+<!-- header-small -->
+<div class="header-small">
+
+    <div class="header-small-close" style="display: flex;justify-content: end;">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="header-small-search" style="display: flex;">
+        <input style="background-color: white;" type="text" placeholder="Tìm kiếm...">
+        <a style="background-color: white;"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+    <ul> <a href="">ĐĂNG KÝ</a></ul>
+    <ul> <a href="gioithieu.html">GIỚI THIỆU</a>
+        <li><a href="gioithieu.html">GIỚI THIỆU CHUNG</a></li>
+        <li><a href="gioithieu.html">SỨ MỆNH</a></li>
+        <li><a href="gioithieu.html">TẦM NHÌN</a></li>
+        <li><a href="gioithieu.html">GIÁ TRỊ CỐT LÕI</a></li>
+        <li><a href="gioithieu.html">BAN LÃNH ĐẠO</a></li>
+    </ul>
+    <ul> <a href="linhvucdautu.html">LĨNH VỰC ĐẦU TƯ</a></ul>
+    <ul> <a href="tintuc.html">TIN TỨC</a></ul>
+    <ul> <a href="doitac.html">ĐỐI TÁC</a></ul>
+    <ul> <a href="tuyendung.html">TUYỂN DỤNG</a></ul>
+    <ul> <a href="thamquan.html">THAM QUAN ATBANK</a></ul>
+    <ul> <a href="lienhe.html">LIÊN HỆ</a></ul>
+</div>
+
+<div class="screen-opacity">
+
+</div>
+<!-- header-small -->
+
+    <!-- banner -->
+    <div style="height: auto;align-items: center;position: relative;">
+        <img src="image/thamquan.png" style="position: absolute;left: 10%;bottom: 10px;height: 70px;" alt="">
+        <img style="height: 100%;width: 100%;" src="image/bannerthamquan.jpg" alt="">
+    </div>
+    <!-- banner -->
+
+
+    <!-- tham quan -->
+    <div style="display: grid; grid-template-columns: repeat(2,1fr);align-items: start;background-color: white;" class="width80">
+        <div style="padding: 2%;">
+            <img style="width: 100%;border-radius: 5px;" src="image/tq1.jpg" alt="">
+        </div>
+        <div style="padding: 2%;">
+            <img style="width: 100%;border-radius: 5px;" src="image/tq2.jpg" alt="">
+            <div style="display: grid; grid-template-columns: repeat(3,1fr);">
+                <img style="width: 100%;height: auto;" src="image/tq21.jpg" alt="">
+                <img style="width: 100%;height: auto;" src="image/tq21.jpg" alt="">
+                <img style="width: 100%;height: auto;" src="image/tq21.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- tham quan -->
+    
+    <!-- <FOOter> -->
+        <div class="footer">
+            <div class="width80 footer1">
+                <DIV class="footer1-container">
+                    <div>
+                        <img style="margin-bottom: 15px;" src="image/Logo ATBank 1.png" alt=""> <br>
+                        <h4 class="title_text" style="font-size: 22px;">CÔNG TY TNHH MTV ATBANK</h4> <br>
+                        <P>Địa chỉ: Tạo ra giá trị cho các doanh nghiệp, dự án được đầu tư, đưa các Doanh nghiệp lên vị trí
+                            dẫn đầu thị trường</P>
+                    </div>
+                    <form>
+                        <h2 class="title_text" style="margin-top: 0;">KẾT NỐI</h2>
+                        <P>Vui lòng đăng ký để nhận thông tin mới</P>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="Email của bạn">
+                            <Button type="submit">
+                                <i class="fa-light fa-envelope"></i></Button>
+                        </div>
+                        <p>Email:isam@gmail.com</p>
+                        <p>Hotline: 04725648263</p>
+                    </form>
+                    <div class="mxh">
+                        <h2 class="title_text" style="margin-top:0;">FANPAGE</h2>
+                        <img style="width: 100%;height: auto; margin-bottom: 10px;" src="image/tq21.jpg" alt="">
+                        <div class="mxhs">
+                            <div class="mxh-link fb">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="mxh-link tw">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="mxh-link ins">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="mxh-link yt">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </DIV>
+            </div>
+    
+            <div class="footer2">
+                <p>@ Copyright ATBANK 2023. Design by Vicogroup.vn</p>
+            </div>
+        </div>
+    
+        <!-- <FOOter> -->
+        <!-- phone -->
+        <a href="" class="phone">
+            <div class="phone-icon">
+                <i class="fa-regular fa-phone"></i>
+            </div>
+            <div class="phone-number">
+                0999.888.777
+            </div>
+        </a>
+        <!-- phone -->
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

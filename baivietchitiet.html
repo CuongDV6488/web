@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài viết chi tiết</title>
+        <link rel="stylesheet" href="Font-Awesome-Pro/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,
+            wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    </head>
+    <style>
+        .form-group {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group .forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-group .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .form-group .register-link {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-group .register-link:hover {
+            text-decoration: underline;
+        }
+
+        .form-group button {
+            width: 80%;
+            padding: 10px;
+            background:linear-gradient(to right,#27C3E3,#267DCD);
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background:linear-gradient(to right,#267DCD,#044d91);
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <!-- header -->
+    <header class="header">
+        <div class="header-infor reponsive-hiden">
+            <p class="header-infor-email">Email: isam@atbank.com</p>
+            <p class="header-infor-hotline" style="text-align: start;" href="">Hotline: 0999888777</p>
+            <div></div>
+            <div style="text-align: end;">
+                <i class="fa-regular fa-earth-americas"></i>
+                <select id="lang" name="lang">
+                    <option value="VN">VN</option>
+                    <option value="ENG">ENG</option>
+                </select>
+            </div>
+            <div style="text-align: center;">
+                <i style=" font-style: normal;">|</i>
+            </div>
+            <div class="header-infor-logincontainer">
+                <i class="fa-sharp fa-light fa-right-to-bracket"></i>
+                <a class="header-infor-login" href="dangnhap.html">Đăng ký/ Đăng nhập</a>
+            </div>
+        </div>
+        <div class="header-narbar">
+
+            <div class="header-narbar-icon">&#9776;</div>
+            <div></div>
+            <a style="width: fit-content;height: fit-content;" href="home.html">
+                <img style="height: auto" src="image/Logo ATBank 1.png" alt=""></a>
+            <a class="reponsive-hiden" href="home.html"><img style="height: 30PX" src="image/home.png"></a>
+            <div class="dropdown reponsive-hiden">
+                <a href="gioithieu.html">GIỚI THIỆU</a>
+                <div class="dropdown-content">
+                    <a href="">GIỚI THIỆU CHUNG</a>
+                    <a href="">SỨ MỆNH</a>
+                    <a href="">TẦM NHÌN</a>
+                    <a href="">GIÁ TRỊ CỐT LÕI</a>
+                    <a href="">BAN LÃNH ĐẠO</a>
+                </div>
+            </div>
+            <div class="dropdown reponsive-hiden">
+                <a href="linhvucdautu.html">LĨNH VỰC ĐẦU TƯ</a>
+                <div class="dropdown-content">
+                    <a href="">SIÊU THỊ</a>
+                    <a href="">CÔNG TY CÔNG NGHỆ</a>
+                    <a href="">ỦY THÁC ĐẦU TƯ</a>
+                    <a href="">ĐỐI TÁC CỦA BẢO HIỂM NHÂN THỌ</a>
+                </div>
+            </div>
+            <div class="dropdown reponsive-hiden">
+                <a href="tintuc.html">TIN TỨC</a>
+                <div class="dropdown-content">
+                    <a href="">TIN NỘI BỘ</a>
+                    <a href="">TIN TỔNG HỢP</a>
+                </div>
+            </div>
+            <a class="reponsive-hiden" href="doitac.html">ĐỐI TÁC</a>
+            <div class="dropdown reponsive-hiden">
+                <a href="tuyendung.html">TUYỂN DỤNG</a>
+                <div class="dropdown-content">
+                    <a href="">KÊNH NGOẠI KHỐI</a>
+                    <a href="">KÊNH NỘI BỘ</a>
+                </div>
+            </div>
+            <a class="reponsive-hiden" href="lienhe.html">LIÊN HỆ</a>
+            <a class="reponsive-hiden" id="search-button" href=""><img style="height: 30PX;text-align: center;"
+                    src="image/search (1).png" alt=""></a>
+            <a class="reponsive-hiden" href="thamquan.html">
+                <button>
+                    THAM QUAN ATBANK
+                </button>
+            </a>
+            <div class="header-narbar-lang" style="text-align: end;">
+                <i class="fa-regular fa-earth-americas"></i>
+                <select id="lang" name="lang">
+                    <option value="VN">VN</option>
+                    <option value="ENG">ENG</option>
+                </select>
+            </div>
+            <div></div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- header-small -->
+    <div class="header-small">
+
+        <div class="header-small-close" style="display: flex;justify-content: end;">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="header-small-search" style="display: flex;">
+            <input style="background-color: white;" type="text" placeholder="Tìm kiếm...">
+            <a style="background-color: white;"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <ul href="">ĐĂNG KÝ</ul>
+        <ul href="">GIỚI THIỆU
+            <li>GIỚI THIỆU CHUNG</li>
+            <li>GIỚI THIỆU CHUNG</li>
+            <li>GIỚI THIỆU CHUNG</li>
+        </ul>
+        <ul>LĨNH VỰC ĐẦU TƯ</ul>
+        <ul>TIN TỨC</ul>
+        <ul>ĐỐI TÁC</ul>
+        <ul>TUYỂN DỤNG</ul>
+        <ul>THAM QUAN ATBANK</ul>
+        <ul>LIÊN HỆ</ul>
+    </div>
+
+    <div class="screen-opacity">
+
+    </div>
+    <!-- header-small -->
+
+    
+    <!-- banner -->
+    <div style="height: auto;align-items: center;position: relative;width: 100%;">
+        <img src="image/bvctt.png" style="position: absolute;left: 10%;bottom: 10px;height: 70px;" alt="">
+        <img style="height: 100%;width: 100%;" src="image/bannerbvct.png" alt="">
+    </div>
+    <!-- banner -->
+
+    <!-- bài viết -->
+    <div class="width80" style ="text-align: justify;">
+        <h2 style="text-transform: uppercase;text-align: center;" >
+            Chính phủ đưa ra chính sách hỗ trợ người dân mua bảo hiểm</h2>
+        <br>
+        <h4>Cuộc sống hạnh phúc, ấm no luôn là điều mong mỏi thường trực trong mỗi cá nhân và mỗi gia đình Việt.
+            Nhưng để biến mong ước đó thành hiện thực và bảo vệ hạnh phúc vững bền,
+            dài lâu thì không phải ai cũng có thể làm được mà phải đòi hỏi một tầm nhìn xa cùng một kế hoạch hoàn hảo.
+        </h4>
+        <p>Để không ngừng nâng cao sức khỏe của khách hàng chúng tôi đã đưa các sản phẩm chăm sóc sức khỏe tuyệt vời từ
+            cây sâm Việt Nam
+            đển với Khách hàng trong nhiều năm. Khách hàng kí hợp đồng BHNT thông qua Công ty TNHH đại lý Bảo Hiểm Sâm
+            tổ chức với mức phí từ 30 triệu/năm trở lên sẽ được chăm sóc bằng các sản phẩm quý từ sâm dây Ngọc Linh,
+            sâm tranh Sủng Trái… Các dòng sản phẩm quý này sẽ hỗ trợ nâng cao sức khoẻ cho khách hàng trong suốt
+            thời gian 15 năm. Chương trình “quà tặng bốn mùa” áp dụng cho những hợp đồng BHNT của khách hàng vẫn
+            còn hiệu lực và được đóng phí hàng năm đầy đủ.</p>
+        <h2>VÌ SAO BẠN NÊN QUAN TÂM SẢN PHẨM NÀY</h2>
+        <p>Phí hàng năm của khách hàng từ 60 triệu/năm đến 100 triệu/năm, ngoài Quà tặng 4 mùa,
+            khách hàng sẽ được nhận quyền lợi từ 1 đến 5 suất mộ ở Vĩnh Hằng Viên miễn phí.
+            Nếu dự án khả thi và đi vào hoạt động chính thức thì những khách hàng tham gia BHNT thông qua
+            Đại lý tổ chức là Công ty TNHH Đại lý Bảo hiểm Sâm từ năm 2024 sẽ có được quyền lợi này,
+            cùng với các điều khoản cụ thể về việc duy trì hợp đồng BHNT trong suốt 15 năm hiệu lực.</p>
+            <img style="width: 100%;height: auto;" src="image/baivietchitiet.png" alt="">
+    </div>
+
+    <!-- bài viết -->
+
+    <!-- Nhập thông tin tư vấn -->
+    <div style="position: relative; background-image: url(image/Group\ 36992.png);background-position: center;background-size: cover;height: 400px;width: 100%;">
+        <img src="image/contacts 1.png" style="height: 100%;width: auto;position: absolute;top: -10%;right: 55%;" alt="">
+        <form style="color: white;position: absolute;top: 0;left: 50%;height: auto;width: 35%;" action="/login" method="post">
+            <div class="form-group">
+                <h2>ĐỂ LẠI THÔNG TIN NHẬN TƯ VẤN</h2>
+                <P>Phí hàng năm của khách hàng từ 60 triệu</P>
+            </div>
+            <div class="form-group">
+                <input type="text" id="hovaten" name="hovaten" placeholder="Họ và tên" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email đăng nhập" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="sdt" name="sdt" placeholder="Số điện thoại" required>
+            </div>
+            <div class="form-group">
+                <button style="height: 50px;" type="submit">Nhận tư vấn ngay</button>
+            </div>
+        </form>
+    </div>
+    <!-- Nhập thông tin tư vấn -->
+
+    <!-- <FOOter> -->
+        <div class="footer">
+            <div class="width80 footer1">
+                <DIV class="footer1-container">
+                    <div>
+                        <img style="margin-bottom: 15px;" src="image/Logo ATBank 1.png" alt=""> <br>
+                        <h4 class="title_text" style="font-size: 22px;">CÔNG TY TNHH MTV ATBANK</h4> <br>
+                        <P>Địa chỉ: Tạo ra giá trị cho các doanh nghiệp, dự án được đầu tư, đưa các Doanh nghiệp lên vị trí
+                            dẫn đầu thị trường</P>
+                    </div>
+                    <form>
+                        <h2 class="title_text" style="margin-top: 0;">KẾT NỐI</h2>
+                        <P>Vui lòng đăng ký để nhận thông tin mới</P>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="Email của bạn">
+                            <Button type="submit">
+                                <i class="fa-light fa-envelope"></i></Button>
+                        </div>
+                        <p>Email:isam@gmail.com</p>
+                        <p>Hotline: 04725648263</p>
+                    </form>
+                    <div class="mxh">
+                        <h2 class="title_text" style="margin-top:0;">FANPAGE</h2>
+                        <img style="width: 100%;height: auto; margin-bottom: 10px;" src="image/tq21.jpg" alt="">
+                        <div class="mxhs">
+                            <div class="mxh-link fb">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="mxh-link tw">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="mxh-link ins">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="mxh-link yt">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </DIV>
+            </div>
+    
+            <div class="footer2">
+                <p>@ Copyright ATBANK 2023. Design by Vicogroup.vn</p>
+            </div>
+        </div>
+    
+        <!-- <FOOter> -->
+        <!-- phone -->
+        <a href="" class="phone">
+            <div class="phone-icon">
+                <i class="fa-regular fa-phone"></i>
+            </div>
+            <div class="phone-number">
+                0999.888.777
+            </div>
+        </a>
+        <!-- phone -->
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
